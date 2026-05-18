@@ -1,7 +1,7 @@
-🏦 Predicción de Abandono de Clientes — Beta Bank (Churn)
+# 🏦 Predicción de Abandono de Clientes — Beta Bank (Churn)
 > Modelo de clasificación binaria para predecir si un cliente abandonará el banco, usando técnicas de corrección de desequilibrio de clases y optimización de hiperparámetros.
 ---
-📋 Descripción del Proyecto
+# 📋 Descripción del Proyecto
 Los clientes de Beta Bank se están yendo cada mes. Retener a un cliente existente es más barato que atraer uno nuevo. Este proyecto desarrolla un modelo de Machine Learning que predice qué clientes están en riesgo de abandonar el banco, permitiendo acciones preventivas de retención.
 Criterio de aprobación: F1 Score ≥ 0.59 en el conjunto de prueba.
 ---
