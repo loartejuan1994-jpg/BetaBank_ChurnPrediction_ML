@@ -66,13 +66,13 @@ Característica	Descripción
 ---
 # 🤖 Modelos Evaluados
 ```
-  Modelo	Enfoque	                     F1 Score (Validación)
-- Random Forest ⭐	Oversampling	        ~60%
-- Random Forest	class_weight	           ~56%
-- Árbol de Decisión	class_weight	        ~56%
-- Modelo Base	Sin corrección	              ~55%
-- Random Forest	Undersampling	           ~54%
-- Regresión Logística	class_weight	     ~48%
+          Modelo	Enfoque	             F1 Score (Validación)
+- Random Forest ⭐ (Oversampling)	        ~60%
+- Random Forest (class_weight)	           ~56%
+- Árbol de Decisión (class_weight)	        ~56%
+- Modelo Base (Sin corrección)	           ~55%
+- Random Forest (Undersampling)	           ~54%
+- Regresión Logística (class_weight)	     ~48%
 ```
 ---
 # 📈 Resultados Finales
@@ -115,11 +115,11 @@ jupyter notebook Project_11_BetaBank_ChurnPrediction.ipynb
 ```
 ---
 # 💡 Conclusiones Clave
->El desequilibrio de clases (3.92:1) impacta significativamente el F1 Score si no se corrige.
-El Bosque Aleatorio con SMOTE fue el mejor modelo, superando el umbral de 0.59.
-La edad del cliente es el factor más determinante para predecir el abandono (~32%).
-El AUC-ROC fue superior al F1 Score, lo que es típico en datasets desbalanceados donde el modelo discrimina bien globalmente pero tiene dificultades con la clase minoritaria.
-Los Falsos Negativos son el error más costoso para Beta Bank — clientes que abandonan sin ser detectados.
+- El desequilibrio de clases (3.92:1) impacta significativamente el F1 Score si no se corrige.
+- El Bosque Aleatorio con SMOTE fue el mejor modelo, superando el umbral de 0.59.
+- La edad del cliente es el factor más determinante para predecir el abandono (~32%).
+- El AUC-ROC fue superior al F1 Score, lo que es típico en datasets desbalanceados donde el modelo discrimina bien globalmente pero tiene dificultades con la clase minoritaria.
+- Los Falsos Negativos son el error más costoso para Beta Bank — clientes que abandonan sin ser detectados.
 ---
 # 📌 Recomendaciones para Beta Bank
 - Priorizar clientes de mayor edad con pocos productos activos e inactividad reciente.
