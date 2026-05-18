@@ -2,11 +2,11 @@
 > Modelo de clasificación binaria para predecir si un cliente abandonará el banco, usando técnicas de corrección de desequilibrio de clases y optimización de hiperparámetros.
 ---
 # 📋 Descripción del Proyecto
->Los clientes de Beta Bank se están yendo cada mes. Retener a un cliente existente es más barato que atraer uno nuevo. Este proyecto desarrolla un modelo de Machine Learning que predice qué clientes están en riesgo de abandonar el banco, permitiendo acciones preventivas de retención.
+> Los clientes de Beta Bank se están yendo cada mes. Retener a un cliente existente es más barato que atraer uno nuevo. Este proyecto desarrolla un modelo de Machine Learning que predice qué clientes están en riesgo de abandonar el banco, permitiendo acciones preventivas de retención.
 Criterio de aprobación: F1 Score ≥ 0.59 en el conjunto de prueba.
 ---
 # 🎯 Objetivo
->Desarrollar el modelo con el máximo F1 Score posible, midiendo además AUC-ROC como métrica secundaria y comparando ambas métricas en el conjunto de prueba.
+> Desarrollar el modelo con el máximo F1 Score posible, midiendo además AUC-ROC como métrica secundaria y comparando ambas métricas en el conjunto de prueba.
 ---
 # 📁 Estructura del Proyecto
 ```
@@ -21,17 +21,18 @@ Project_11_Prediccion_Abandono_Clientes_BetaBank/
 # 📊 Dataset
 Característica	Descripción
 ```
-`CreditScore`	Valor de crédito del cliente
-`Geography`	País de residencia
-`Gender`	Sexo del cliente
-`Age`	Edad
-`Tenure`	Años con el banco
-`Balance`	Saldo de la cuenta
+`CreditScore`   	Valor de crédito del cliente
+`Geography`	      País de residencia
+`Gender`	         Sexo del cliente
+`Age`	            Edad
+`Tenure`	         Años con el banco
+`Balance`	      Saldo de la cuenta
 `NumOfProducts`	Productos bancarios utilizados
-`HasCrCard`	¿Tiene tarjeta de crédito?
-`IsActiveMember`	¿Es miembro activo?
+`HasCrCard`	      Tiene tarjeta de crédito?
+`IsActiveMember`	Es miembro activo?
 `EstimatedSalary`	Salario estimado
-`Exited` ⭐	Variable objetivo — abandonó (1) o no (0)
+
+`Exited`       ⭐	Variable objetivo — abandonó (1) o no (0)
 ```
 > `RowNumber`, `CustomerId` y `Surname` fueron eliminadas por no tener valor predictivo.
 ---
@@ -64,13 +65,15 @@ Característica	Descripción
 ```
 ---
 # 🤖 Modelos Evaluados
-- Modelo	Enfoque	F1 Score (Validación)
-- Random Forest ⭐	Oversampling	~60%
-- Random Forest	class_weight	~56%
-- Árbol de Decisión	class_weight	~56%
-- Modelo Base	Sin corrección	~55%
-- Random Forest	Undersampling	~54%
-- Regresión Logística	class_weight	~48%
+```
+  Modelo	Enfoque	                     F1 Score (Validación)
+- Random Forest ⭐	Oversampling	        ~60%
+- Random Forest	class_weight	           ~56%
+- Árbol de Decisión	class_weight	        ~56%
+- Modelo Base	Sin corrección	              ~55%
+- Random Forest	Undersampling	           ~54%
+- Regresión Logística	class_weight	     ~48%
+```
 ---
 # 📈 Resultados Finales
 ## Métrica	Resultado
@@ -81,12 +84,14 @@ Característica	Descripción
 
 Variables más importantes para predecir el abandono:
 ```
-Age               → ~31%  ← más determinante
-NumOfProducts     → ~19%
-Balance           → ~12%
-EstimatedSalary   →  ~9%
-CreditScore       →  ~8%
-IsActiveMember    →  ~6%
+Age               → ~32%  ← más determinante
+NumOfProducts     → ~25%
+Balance           → ~10%
+IsActiveMember    →  ~7%
+Tenure            →  ~6%
+EstimatedSalary   →  ~6%
+CreditScore       →  ~5%
+
 ```
 ---
 # 🛠️ Tecnologías Utilizadas
@@ -111,14 +116,13 @@ jupyter notebook Project_11_BetaBank_ChurnPrediction.ipynb
 ---
 # 💡 Conclusiones Clave
 >El desequilibrio de clases (3.92:1) impacta significativamente el F1 Score si no se corrige.
-El Bosque Aleatorio con Oversampling fue el mejor modelo, superando el umbral de 0.59.
-La edad del cliente es el factor más determinante para predecir el abandono (~31%).
+El Bosque Aleatorio con SMOTE fue el mejor modelo, superando el umbral de 0.59.
+La edad del cliente es el factor más determinante para predecir el abandono (~32%).
 El AUC-ROC fue superior al F1 Score, lo que es típico en datasets desbalanceados donde el modelo discrimina bien globalmente pero tiene dificultades con la clase minoritaria.
 Los Falsos Negativos son el error más costoso para Beta Bank — clientes que abandonan sin ser detectados.
 ---
 # 📌 Recomendaciones para Beta Bank
 - Priorizar clientes de mayor edad con pocos productos activos e inactividad reciente.
-- Ajustar el umbral de decisión por debajo de 0.50 para capturar más Falsos Negativos.
 - Reentrenar el modelo cada 6 meses con datos actualizados.
 - Monitorear las variables `Age`, `NumOfProducts` e `IsActiveMember` como señales tempranas de riesgo.
 ---
