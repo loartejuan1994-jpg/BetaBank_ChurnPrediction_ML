@@ -20,6 +20,7 @@ Project_11_Prediccion_Abandono_Clientes_BetaBank/
 ---
 # 📊 Dataset
 Característica	Descripción
+```
 `CreditScore`	Valor de crédito del cliente
 `Geography`	País de residencia
 `Gender`	Sexo del cliente
@@ -31,6 +32,7 @@ Característica	Descripción
 `IsActiveMember`	¿Es miembro activo?
 `EstimatedSalary`	Salario estimado
 `Exited` ⭐	Variable objetivo — abandonó (1) o no (0)
+```
 > `RowNumber`, `CustomerId` y `Surname` fueron eliminadas por no tener valor predictivo.
 ---
 # ⚙️ Flujo de Trabajo
@@ -62,19 +64,21 @@ Característica	Descripción
 ```
 ---
 # 🤖 Modelos Evaluados
-Modelo	Enfoque	F1 Score (Validación)
-Random Forest ⭐	Oversampling	~60%
-Random Forest	class_weight	~56%
-Árbol de Decisión	class_weight	~56%
-Modelo Base	Sin corrección	~55%
-Random Forest	Undersampling	~54%
-Regresión Logística	class_weight	~48%
+- Modelo	Enfoque	F1 Score (Validación)
+- Random Forest ⭐	Oversampling	~60%
+- Random Forest	class_weight	~56%
+- Árbol de Decisión	class_weight	~56%
+- Modelo Base	Sin corrección	~55%
+- Random Forest	Undersampling	~54%
+- Regresión Logística	class_weight	~48%
 ---
 # 📈 Resultados Finales
-Métrica	Resultado
-F1 Score (test)	≥ 0.59 ✅
-AUC-ROC (test)	≥ 0.85
+## Métrica	Resultado
+- F1 Score (test)	≥ 0.59 ✅
+- AUC-ROC (test)	≥ 0.85
+
 ¿Cumple el umbral?	SÍ ✅
+
 Variables más importantes para predecir el abandono:
 ```
 Age               → ~31%  ← más determinante
@@ -118,8 +122,9 @@ Los Falsos Negativos son el error más costoso para Beta Bank — clientes que a
 - Reentrenar el modelo cada 6 meses con datos actualizados.
 - Monitorear las variables `Age`, `NumOfProducts` e `IsActiveMember` como señales tempranas de riesgo.
 ---
-👤 Autor
+# 👤 Autor
+
 Juan — Junior Data Scientist | Geology & Mining Engineer  
 Proyecto desarrollado como parte del programa Data Scientist — TripleTen
 ---
-Sprint 11 — Aprendizaje Supervisado
+
