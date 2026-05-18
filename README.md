@@ -21,16 +21,16 @@ Project_11_Prediccion_Abandono_Clientes_BetaBank/
 # 📊 Dataset
 Característica	Descripción
 ```
-`CreditScore`   	Valor de crédito del cliente
-`Geography`	      País de residencia
-`Gender`	         Sexo del cliente
-`Age`	            Edad
-`Tenure`	         Años con el banco
-`Balance`	      Saldo de la cuenta
-`NumOfProducts`	Productos bancarios utilizados
-`HasCrCard`	      Tiene tarjeta de crédito?
-`IsActiveMember`	Es miembro activo?
-`EstimatedSalary`	Salario estimado
+`CreditScore`     Valor de crédito del cliente
+`Geography`       País de residencia
+`Gender`          Sexo del cliente
+`Age`             Edad
+`Tenure`          Años con el banco
+`Balance`         Saldo de la cuenta
+`NumOfProducts`   Productos bancarios utilizados
+`HasCrCard`       Tiene tarjeta de crédito?
+`IsActiveMember`  Es miembro activo?
+`EstimatedSalary` Salario estimado
 
 `Exited`       ⭐	Variable objetivo — abandonó (1) o no (0)
 ```
