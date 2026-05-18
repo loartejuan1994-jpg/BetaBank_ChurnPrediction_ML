@@ -109,14 +109,14 @@ pip install pandas numpy scikit-learn matplotlib seaborn imbalanced-learn
 jupyter notebook Project_11_BetaBank_ChurnPrediction.ipynb
 ```
 ---
-#💡 Conclusiones Clave
+# 💡 Conclusiones Clave
 >El desequilibrio de clases (3.92:1) impacta significativamente el F1 Score si no se corrige.
 El Bosque Aleatorio con Oversampling fue el mejor modelo, superando el umbral de 0.59.
 La edad del cliente es el factor más determinante para predecir el abandono (~31%).
 El AUC-ROC fue superior al F1 Score, lo que es típico en datasets desbalanceados donde el modelo discrimina bien globalmente pero tiene dificultades con la clase minoritaria.
 Los Falsos Negativos son el error más costoso para Beta Bank — clientes que abandonan sin ser detectados.
 ---
-#📌 Recomendaciones para Beta Bank
+# 📌 Recomendaciones para Beta Bank
 - Priorizar clientes de mayor edad con pocos productos activos e inactividad reciente.
 - Ajustar el umbral de decisión por debajo de 0.50 para capturar más Falsos Negativos.
 - Reentrenar el modelo cada 6 meses con datos actualizados.
