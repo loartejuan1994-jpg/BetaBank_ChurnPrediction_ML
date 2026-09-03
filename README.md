@@ -4,6 +4,8 @@
 # 📋 Descripción del Proyecto
 > Los clientes de Beta Bank se están yendo cada mes. Retener a un cliente existente es más barato que atraer uno nuevo. Este proyecto desarrolla un modelo de Machine Learning que predice qué clientes están en riesgo de abandonar el banco, permitiendo acciones preventivas de retención.
 Criterio de aprobación: F1 Score ≥ 0.59 en el conjunto de prueba.
+
+Como resultado final se obtuvo un 64.41% de F1 Score superando el criterio de aprobación, por lo tanto el modelo detecta 7 de cada 10 clientes en riesgo de abandono.  
 ---
 # 🎯 Objetivo
 > Desarrollar el modelo con el máximo F1 Score posible, midiendo además AUC-ROC como métrica secundaria y comparando ambas métricas en el conjunto de prueba.
