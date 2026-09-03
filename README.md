@@ -116,7 +116,7 @@ jupyter notebook Project_11_BetaBank_ChurnPrediction.ipynb
 ```
 ---
 # 💡 Conclusiones Clave
-- El desequilibrio de clases (3.92:1) impacta significativamente el F1 Score si no se corrige.
+- El modelo final obtuvo un F1 Score de 64.41% en el conjunto de prueba, superando el umbral mínimo requerido de 59%, por lo tanto el modelo detecta 7 de cada 10 clientes en riesgo de abandono.
 - El Bosque Aleatorio con SMOTE fue el mejor modelo, superando el umbral de 0.59.
 - La edad del cliente es el factor más determinante para predecir el abandono (~32%).
 - El AUC-ROC fue superior al F1 Score, lo que es típico en datasets desbalanceados donde el modelo discrimina bien globalmente pero tiene dificultades con la clase minoritaria.
