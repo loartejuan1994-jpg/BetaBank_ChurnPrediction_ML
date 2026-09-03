@@ -129,7 +129,7 @@ jupyter notebook Project_11_BetaBank_ChurnPrediction.ipynb
 ---
 # 👤 Autor
 
-Juan — Junior Data Scientist | Geology & Mining Engineer  
-Proyecto desarrollado como parte del programa Data Scientist — TripleTen
+> Juan — Junior Data Scientist | Geology & Mining Engineer  
+> Proyecto desarrollado como parte del programa Data Scientist — TripleTen
 ---
 
