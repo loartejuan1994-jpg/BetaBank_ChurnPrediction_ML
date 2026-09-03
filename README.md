@@ -7,7 +7,7 @@
 > Como resultado final se obtuvo un 64.41% de F1 Score superando el criterio de aprobación, por lo tanto el modelo detecta 7 de cada 10 clientes en riesgo de abandono.  
 ---
 # 🎯 Objetivo
-> Desarrollar el modelo con el máximo F1 Score posible, midiendo además AUC-ROC como métrica secundaria y comparando ambas métricas en el conjunto de prueba.
+> Desarrollar un modelo de clasificación binaria que prediga si un cliente de Beta Bank abandonará el banco próximamente.
 ---
 # 📁 Estructura del Proyecto
 ```
